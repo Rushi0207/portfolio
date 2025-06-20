@@ -37,24 +37,24 @@ export default function PortfolioClient() {
     { id: "contact", label: "Contact" },
   ]
 
-  const skills = [
-    { category: "Languages", items: ["JavaScript", "Java", "Python", "C", "SQL"] },
-    { category: "Web Technologies", items: ["HTML", "CSS", "React.js", "Node.js", "Express.js"] },
-    { category: "Backend", items: ["Spring Boot", "Spring Security", "FastAPI"] },
-    { category: "Databases", items: ["MongoDB", "MySQL", "PostgreSQL"] },
-    { category: "Tools & Platforms", items: ["Git", "Maven", "VS Code", "Postman", "AWS"] },
-    { category: "Soft Skills", items: ["Problem-solving", "Teamwork", "Adaptability"] },
-    {
-      category: "Problem Solving",
-      items: [
-        "500+ LeetCode Problems",
-        "500+ GeeksforGeeks Problems",
-        "Data Structures",
-        "Algorithms",
-        "Competitive Programming",
-      ],
-    },
-  ]
+//   const skills = [
+//     { category: "Languages", items: ["JavaScript", "Java", "Python", "C", "SQL"] },
+//     { category: "Web Technologies", items: ["HTML", "CSS", "React.js", "Node.js", "Express.js"] },
+//     { category: "Backend", items: ["Spring Boot", "Spring Security", "FastAPI"] },
+//     { category: "Databases", items: ["MongoDB", "MySQL", "PostgreSQL"] },
+//     { category: "Tools & Platforms", items: ["Git", "Maven", "VS Code", "Postman", "AWS"] },
+//     { category: "Soft Skills", items: ["Problem-solving", "Teamwork", "Adaptability"] },
+//     {
+//       category: "Problem Solving",
+//       items: [
+//         "500+ LeetCode Problems",
+//         "500+ GeeksforGeeks Problems",
+//         "Data Structures",
+//         "Algorithms",
+//         "Competitive Programming",
+//       ],
+//     },
+//   ]
 
   const projects = [
     {
@@ -213,7 +213,7 @@ export default function PortfolioClient() {
               </div>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
-              Hi, I'm{" "}
+              Hi, I&apos;m{" "}
               <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
                 Rushikesh Phadtare
               </span>
@@ -222,7 +222,7 @@ export default function PortfolioClient() {
               🚀 Full-Stack Developer | MERN Specialist | 500+ DSA Problems Solved
             </p>
             <p className="text-lg text-slate-700 max-w-3xl mx-auto mb-12 leading-relaxed">
-              I'm a second-year Computer Engineering student passionate about building scalable, real-world applications
+              I&apos;m a second-year Computer Engineering student passionate about building scalable, real-world applications
               using modern technologies. From full-stack apps to AI-powered tools, I love solving problems that create
               impact.
             </p>
@@ -268,14 +268,14 @@ export default function PortfolioClient() {
             <Card className="border-0 shadow-2xl shadow-purple-500/20 bg-gradient-to-br from-white to-purple-50/50">
               <CardContent className="p-8">
                 <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                  I'm Rushikesh Phadtare, a dedicated full-stack developer and software engineer with deep experience in
-                  MERN stack, Java Spring Boot, and cloud technologies. I've built production-ready tools like an
+                  I&apos;m Rushikesh Phadtare, a dedicated full-stack developer and software engineer with deep experience in
+                  MERN stack, Java Spring Boot, and cloud technologies. I&apos;ve built production-ready tools like an
                   AI-powered resume critique system, automated Instagram reply engines, and secure authentication
                   platforms.
                 </p>
                 <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                  I'm a finalist in the Smart India Hackathon 2023, a full-stack intern at Ttretta Pvt Ltd, and a
-                  research participant at IIT Bombay. I'm passionate about blending engineering with innovation to build
+                  I&apos;m a finalist in the Smart India Hackathon 2023, a full-stack intern at Ttretta Pvt Ltd, and a
+                  research participant at IIT Bombay. I&apos;m passionate about blending engineering with innovation to build
                   intuitive, useful, and scalable software.
                 </p>
                 <p className="text-lg text-slate-700 leading-relaxed">
@@ -549,7 +549,7 @@ export default function PortfolioClient() {
                       Bachelor of Engineering (Computer Engineering)
                     </h3>
                     <p className="text-lg bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent font-semibold mb-2">
-                      MCT's Rajiv Gandhi Institute of Technology, Mumbai
+                      MCT&zpos;s Rajiv Gandhi Institute of Technology, Mumbai
                     </p>
                     <Badge className="bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 border-indigo-200">
                       2021 – Present
@@ -571,7 +571,7 @@ export default function PortfolioClient() {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto mb-8"></div>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              I'm always open to discussing new opportunities, interesting projects, or just having a chat about
+              I&apos;m always open to discussing new opportunities, interesting projects, or just having a chat about
               technology.
             </p>
           </div>

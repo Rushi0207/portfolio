@@ -222,7 +222,7 @@ export default function PortfolioClient() {
               🚀 Full-Stack Developer | MERN Specialist | 500+ DSA Problems Solved
             </p>
             <p className="text-lg text-slate-700 max-w-3xl mx-auto mb-12 leading-relaxed">
-              I&apos;m a second-year Computer Engineering student passionate about building scalable, real-world applications
+              I&apos;m Computer Engineering student passionate about building scalable, real-world applications
               using modern technologies. From full-stack apps to AI-powered tools, I love solving problems that create
               impact.
             </p>

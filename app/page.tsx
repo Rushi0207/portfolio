@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -33,7 +33,7 @@ export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navItems = [
+  const navItems = useMemo(() => [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
@@ -41,7 +41,7 @@ export default function Portfolio() {
     { id: "experience", label: "Experience" },
     { id: "achievements", label: "Achievements" },
     { id: "contact", label: "Contact" },
-  ];
+  ], []);
 
   // Skills data is now inline in the component to avoid unused variable
 
@@ -301,8 +301,8 @@ export default function Portfolio() {
               Solved
             </p>
             <p className="text-lg text-slate-700 max-w-3xl mx-auto mb-12 leading-relaxed">
-              I&apos;m a second-year Computer Engineering student passionate about
-              building scalable, real-world applications using modern
+              I&apos;m a second-year Computer Engineering student passionate
+              about building scalable, real-world applications using modern
               technologies. From full-stack apps to AI-powered tools, I love
               solving problems that create impact.
             </p>
@@ -351,18 +351,19 @@ export default function Portfolio() {
             <Card className="border-0 shadow-2xl shadow-purple-500/20 bg-gradient-to-br from-white to-purple-50/50">
               <CardContent className="p-8">
                 <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                  I&apos;m Rushikesh Phadtare, a dedicated full-stack developer and
-                  software engineer with deep experience in MERN stack, Java
+                  I&apos;m Rushikesh Phadtare, a dedicated full-stack developer
+                  and software engineer with deep experience in MERN stack, Java
                   Spring Boot, and cloud technologies. I&apos;ve built
                   production-ready tools like an AI-powered resume critique
                   system, automated Instagram reply engines, and secure
                   authentication platforms.
                 </p>
                 <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                  I&apos;m a finalist in the Smart India Hackathon 2023, a full-stack
-                  intern at Ttretta Pvt Ltd, and a research participant at IIT
-                  Bombay. I&apos;m passionate about blending engineering with
-                  innovation to build intuitive, useful, and scalable software.
+                  I&apos;m a finalist in the Smart India Hackathon 2023, a
+                  full-stack intern at Ttretta Pvt Ltd, and a research
+                  participant at IIT Bombay. I&apos;m passionate about blending
+                  engineering with innovation to build intuitive, useful, and
+                  scalable software.
                 </p>
                 <p className="text-lg text-slate-700 leading-relaxed">
                   In addition to web development, I actively solve data
@@ -752,7 +753,7 @@ export default function Portfolio() {
                       Bachelor of Engineering (Computer Engineering)
                     </h3>
                     <p className="text-lg bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent font-semibold mb-2">
-                      MCT's Rajiv Gandhi Institute of Technology, Mumbai
+                      MCT&apos;s Rajiv Gandhi Institute of Technology, Mumbai
                     </p>
                     <Badge className="bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 border-indigo-200">
                       2021 – Present

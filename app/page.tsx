@@ -351,17 +351,17 @@ export default function Portfolio() {
             <Card className="border-0 shadow-2xl shadow-purple-500/20 bg-gradient-to-br from-white to-purple-50/50">
               <CardContent className="p-8">
                 <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                  I'm Rushikesh Phadtare, a dedicated full-stack developer and
+                  I&apos;m Rushikesh Phadtare, a dedicated full-stack developer and
                   software engineer with deep experience in MERN stack, Java
-                  Spring Boot, and cloud technologies. I've built
+                  Spring Boot, and cloud technologies. I&apos;ve built
                   production-ready tools like an AI-powered resume critique
                   system, automated Instagram reply engines, and secure
                   authentication platforms.
                 </p>
                 <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                  I'm a finalist in the Smart India Hackathon 2023, a full-stack
+                  I&apos;m a finalist in the Smart India Hackathon 2023, a full-stack
                   intern at Ttretta Pvt Ltd, and a research participant at IIT
-                  Bombay. I'm passionate about blending engineering with
+                  Bombay. I&apos;m passionate about blending engineering with
                   innovation to build intuitive, useful, and scalable software.
                 </p>
                 <p className="text-lg text-slate-700 leading-relaxed">
@@ -777,7 +777,7 @@ export default function Portfolio() {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto mb-8"></div>
             <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-              I'm always open to discussing new opportunities, interesting
+              I&apos;m always open to discussing new opportunities, interesting
               projects, or just having a chat about technology.
             </p>
           </div>

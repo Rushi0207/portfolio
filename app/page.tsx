@@ -43,39 +43,7 @@ export default function Portfolio() {
     { id: "contact", label: "Contact" },
   ];
 
-  const skills = [
-    {
-      category: "Languages",
-      items: ["JavaScript", "Java", "Python", "C", "SQL"],
-    },
-    {
-      category: "Web Technologies",
-      items: ["HTML", "CSS", "React.js", "Node.js", "Express.js"],
-    },
-    {
-      category: "Backend",
-      items: ["Spring Boot", "Spring Security", "FastAPI"],
-    },
-    { category: "Databases", items: ["MongoDB", "MySQL", "PostgreSQL"] },
-    {
-      category: "Tools & Platforms",
-      items: ["Git", "Maven", "VS Code", "Postman", "AWS"],
-    },
-    {
-      category: "Soft Skills",
-      items: ["Problem-solving", "Teamwork", "Adaptability"],
-    },
-    {
-      category: "Problem Solving",
-      items: [
-        "500+ LeetCode Problems",
-        "500+ GeeksforGeeks Problems",
-        "Data Structures",
-        "Algorithms",
-        "Competitive Programming",
-      ],
-    },
-  ];
+  // Skills data is now inline in the component to avoid unused variable
 
   const projects = [
     {
@@ -239,7 +207,7 @@ export default function Portfolio() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [navItems]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -323,7 +291,7 @@ export default function Portfolio() {
               </div>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
-              Hi, I'm{" "}
+              Hi, I&apos;m{" "}
               <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
                 Rushikesh Phadtare
               </span>
@@ -333,7 +301,7 @@ export default function Portfolio() {
               Solved
             </p>
             <p className="text-lg text-slate-700 max-w-3xl mx-auto mb-12 leading-relaxed">
-              I'm a second-year Computer Engineering student passionate about
+              I&apos;m a second-year Computer Engineering student passionate about
               building scalable, real-world applications using modern
               technologies. From full-stack apps to AI-powered tools, I love
               solving problems that create impact.

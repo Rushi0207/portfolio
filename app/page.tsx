@@ -27,21 +27,25 @@ import {
   Zap,
   Star,
   Rocket,
+  Download,
 } from "lucide-react";
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navItems = useMemo(() => [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "skills", label: "Skills" },
-    { id: "projects", label: "Projects" },
-    { id: "experience", label: "Experience" },
-    { id: "achievements", label: "Achievements" },
-    { id: "contact", label: "Contact" },
-  ], []);
+  const navItems = useMemo(
+    () => [
+      { id: "home", label: "Home" },
+      { id: "about", label: "About" },
+      { id: "skills", label: "Skills" },
+      { id: "projects", label: "Projects" },
+      { id: "experience", label: "Experience" },
+      { id: "achievements", label: "Achievements" },
+      { id: "contact", label: "Contact" },
+    ],
+    []
+  );
 
   // Skills data is now inline in the component to avoid unused variable
 
@@ -318,6 +322,20 @@ export default function Portfolio() {
               <Button
                 size="lg"
                 variant="outline"
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/Rushikesh_Phadtare_Resume.pdf';
+                  link.download = 'Rushikesh_Phadtare_Resume.pdf';
+                  link.click();
+                }}
+                className="border-2 border-emerald-600 text-emerald-600 hover:bg-gradient-to-r hover:from-emerald-600 hover:to-teal-600 hover:text-white transform hover:scale-105 transition-all duration-300"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                Download Resume
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
                 onClick={() => scrollToSection("contact")}
                 className="border-2 border-purple-600 text-purple-600 hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-600 hover:text-white transform hover:scale-105 transition-all duration-300"
               >
@@ -365,12 +383,26 @@ export default function Portfolio() {
                   engineering with innovation to build intuitive, useful, and
                   scalable software.
                 </p>
-                <p className="text-lg text-slate-700 leading-relaxed">
+                <p className="text-lg text-slate-700 leading-relaxed mb-6">
                   In addition to web development, I actively solve data
                   structures and algorithms problems—over 500+ solved on
                   LeetCode and GeeksforGeeks—and I believe in writing clean,
                   efficient code.
                 </p>
+                <div className="text-center">
+                  <Button
+                    onClick={() => {
+                      const link = document.createElement('a');
+                      link.href = '/Rushikesh_Phadtare_Resume.pdf';
+                      link.download = 'Rushikesh_Phadtare_Resume.pdf';
+                      link.click();
+                    }}
+                    className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white shadow-lg shadow-emerald-500/30 transform hover:scale-105 transition-all duration-300"
+                  >
+                    <Download className="w-4 h-4 mr-2" />
+                    Download My Resume
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -851,6 +883,18 @@ export default function Portfolio() {
               >
                 <Mail className="w-6 h-6" />
               </a>
+              <button
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/Rushikesh_Phadtare_Resume.pdf';
+                  link.download = 'Rushikesh_Phadtare_Resume.pdf';
+                  link.click();
+                }}
+                className="text-slate-300 hover:text-emerald-400 transition-all duration-300 hover:scale-125"
+                title="Download Resume"
+              >
+                <Download className="w-6 h-6" />
+              </button>
             </div>
             <p className="text-slate-400 text-sm">
               © 2025 Rushikesh Phadtare. All rights reserved.

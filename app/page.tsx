@@ -33,7 +33,6 @@ import {
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [downloadCount, setDownloadCount] = useState(0);
 
   const navItems = useMemo(
     () => [
@@ -222,47 +221,12 @@ export default function Portfolio() {
     setIsMenuOpen(false);
   };
 
-  const handleResumeDownload = async () => {
-    try {
-      // Track download on server
-      await fetch('/api/resume-download', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-
-      // Track download locally
-      const currentCount = localStorage.getItem('resumeDownloadCount');
-      const newCount = currentCount ? parseInt(currentCount) + 1 : 1;
-      localStorage.setItem('resumeDownloadCount', newCount.toString());
-      setDownloadCount(newCount);
-
-      // Download the file
-      const link = document.createElement('a');
-      link.href = '/Rushikesh_Phadtare_Resume.pdf';
-      link.download = 'Rushikesh_Phadtare_Resume.pdf';
-      link.click();
-
-      // Optional: Show success message
-      console.log('Resume downloaded successfully!');
-    } catch (error) {
-      console.error('Error tracking download:', error);
-      // Still download the file even if tracking fails
-      const link = document.createElement('a');
-      link.href = '/Rushikesh_Phadtare_Resume.pdf';
-      link.download = 'Rushikesh_Phadtare_Resume.pdf';
-      link.click();
-    }
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/Rushikesh_Phadtare_Resume.pdf';
+    link.download = 'Rushikesh_Phadtare_Resume.pdf';
+    link.click();
   };
-
-  // Load download count on component mount
-  useEffect(() => {
-    const savedCount = localStorage.getItem('resumeDownloadCount');
-    if (savedCount) {
-      setDownloadCount(parseInt(savedCount));
-    }
-  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
